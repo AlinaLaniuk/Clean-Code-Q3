@@ -59,7 +59,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.main__section__header{
+.section__header{
   list-style: none;
   color: #333;
   font-weight: 700;
@@ -69,7 +69,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.section__input-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,7 +81,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.section__input-task:focus {
   color: #333;
 }
 
