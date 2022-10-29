@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -18,11 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
-.aaa { 
+.eisenhower-matrix-description { 
   text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -39,8 +39,7 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li,
-h3 {
+li {
   list-style: none;
 }
 input,
@@ -60,8 +59,8 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="new-task"] {
+.main__section__header{
+  list-style: none;
   color: #333;
   font-weight: 700;
   font-size: 15px;

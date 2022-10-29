@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="body">
     <figure class="eisenhower-matrix-description">
       <img class="eisenhower-matrix-description__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
       <a class="eisenhower-matrix-description__link" 
@@ -13,16 +13,16 @@
           Want more details?
       </a>
     </figure>
-      <main class="centered-main-page-element">
-        <section id="topSectionForAddingElementToList">
-          <h3 for="new-task">Add Item</h3>
+      <main class="main">
+        <section class="main__section">
+          <h3 class="main__section__header" for="new-task">Add Item</h3>
           <div class="task-row-wrapper">
             <input id="new-task"class="task" type="text">
             <button>Add</button>
           </div>
         </section>
-        <section>
-          <h3>Todo</h3>
+        <section class="main__section">
+          <h3 class="main__section__header">Todo</h3>
           <ul id="incompleteTasks">
             <li>
               <input type="checkbox">
@@ -44,8 +44,8 @@
             </li>
           </ul>
         </section>
-        <section>
-          <h3>Completed</h3>
+        <section class="main__section">
+          <h3 class="main__section__header">Completed</h3>
           <ul id="completed-tasks">
             <li>
               <input type="checkbox" checked>
