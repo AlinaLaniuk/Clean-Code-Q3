@@ -94,6 +94,7 @@ button{
 /* New Task */
 
 .section__input-task__add-item {
+  margin-top: 20px;
   display: block;
   width: 318px;
 }
