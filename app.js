@@ -38,6 +38,7 @@ var createNewTaskElement=function(taskString){
     //Each elements, needs appending
     listItem.className="section__item";
     checkBox.type="checkbox";
+    checkBox.className = "section__item__checkbox";
     editInput.type="text";
     label.className = "section__label-task";
     editInput.className="section__input-task";
@@ -57,6 +58,7 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
+    taskInput.value = "";
     return listItem;
 }
 
@@ -130,7 +132,7 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
+    listItem.querySelector('.section__label-task').classList.add('section__label-task__completed');
 }
 
 
@@ -142,6 +144,7 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
+    listItem.querySelector('.section__label-task').classList.remove('section__label-task__completed');
 }
 
 
@@ -154,7 +157,7 @@ var ajaxRequest=function(){
 
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+// addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 
